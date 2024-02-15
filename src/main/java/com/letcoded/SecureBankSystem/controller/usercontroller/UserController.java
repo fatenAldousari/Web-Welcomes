@@ -1,8 +1,8 @@
 package com.letcoded.SecureBankSystem.controller.usercontroller;
 
-import com.letcoded.SecureBankSystem.ob.user.CreatUserRequest;
-import com.letcoded.SecureBankSystem.ob.user.UpdateUserRequest;
-import com.letcoded.SecureBankSystem.service.UserService;
+import com.letcoded.SecureBankSystem.bo.user.CreatUserRequest;
+import com.letcoded.SecureBankSystem.bo.user.UpdateUserRequest;
+import com.letcoded.SecureBankSystem.service.user.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

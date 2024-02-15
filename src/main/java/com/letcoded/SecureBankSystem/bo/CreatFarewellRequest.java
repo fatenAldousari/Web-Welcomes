@@ -1,4 +1,4 @@
-package com.letcoded.SecureBankSystem.ob;
+package com.letcoded.SecureBankSystem.bo;
 
 public class CreatFarewellRequest {
     private String name;

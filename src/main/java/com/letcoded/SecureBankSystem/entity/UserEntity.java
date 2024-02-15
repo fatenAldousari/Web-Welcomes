@@ -15,9 +15,9 @@ public class UserEntity {
     private long id;
     @Column(name = "name", nullable = false)
     private String name;
-    @Column(name= "phone_number",nullable = false)
+    @Column(name = "phone_number", nullable = false)
     private String phoneNumber;
-    @Column (name = "email", nullable = false)
+    @Column(name = "email", nullable = false)
     private String email;
 
     public Status getStatus() {
@@ -30,6 +30,39 @@ public class UserEntity {
 
     @Enumerated(EnumType.STRING)
     private Status status;
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public RoleEntity getRole() {
+        return role;
+    }
+
+    public void setRole(RoleEntity role) {
+        this.role = role;
+    }
+
+    @Column(name = "user_name", nullable = false)
+    private String username;
+    @Column(nullable = false)
+    private String password;
+    @OneToOne
+    @JoinColumn(name = "role_id")
+    private RoleEntity role;
+
     public long getId() {
         return id;
     }

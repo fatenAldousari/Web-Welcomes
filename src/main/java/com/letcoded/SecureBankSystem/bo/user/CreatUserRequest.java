@@ -1,4 +1,4 @@
-package com.letcoded.SecureBankSystem.ob.user;
+package com.letcoded.SecureBankSystem.bo.user;
 
 public class CreatUserRequest {
     private String phone;
